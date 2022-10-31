@@ -1,0 +1,59 @@
+<%- include('partials/header.ejs') %> 
+
+<div class="columns">
+    <!-- Register -->
+    <div class="column">
+        <h1 class="title">Register</h1>
+
+        <form action="/auth/register" method="POST">
+            <div class="field">
+                <label for="" class="label">Full Name</label>
+                <div class="control">
+                    <input type="text" class="input" placeholder="e.g Alex Smith" name="fullName">
+                </div>
+            </div>
+            <div class="field">
+                <label for="" class="label">Email</label>
+                <div class="control">
+                    <input type="email" class="input" placeholder="e.g alexsmith@gmail.com" name="email">
+                </div>
+            </div>
+            <div class="field">
+                <label for="" class="label">Password</label>
+                <div class="control">
+                    <input type="password" class="input" name="password">
+                </div>
+            </div>
+            <div class="control">
+                <button class="button is-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Login -->
+    <div class="column">
+        <h1 class="title">Login</h1>
+
+        <form action="/auth/login" method="POST">
+            <div class="field">
+                <label for="" class="label">Email</label>
+                <div class="control">
+                    <input type="email" class="input" placeholder="e.g alexsmith@gmail.com" name="email">
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="" class="label">Password</label>
+                <div class="control">
+                    <input type="password" class="input" name="password">
+                </div>
+            </div>
+
+            <div class="control">
+                <button class="button is-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<%- include('partials/footer.ejs') %> 
